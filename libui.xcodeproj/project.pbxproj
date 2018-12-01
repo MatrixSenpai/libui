@@ -43,8 +43,7 @@
 		66C2781721B304DF0039CEDC = {
 			isa = PBXGroup;
 			children = (
-				66C2782321B304DF0039CEDC /* libui */,
-				66C2783421B305640039CEDC /* libfa */,
+				66C2783B21B305E30039CEDC /* Sources */,
 				66C2782221B304DF0039CEDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +74,15 @@
 				66C2783621B305640039CEDC /* Info.plist */,
 			);
 			path = libfa;
+			sourceTree = "<group>";
+		};
+		66C2783B21B305E30039CEDC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66C2782321B304DF0039CEDC /* libui */,
+				66C2783421B305640039CEDC /* libfa */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
