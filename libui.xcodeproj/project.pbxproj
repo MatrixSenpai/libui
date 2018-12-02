@@ -10,6 +10,10 @@
 		66C2782621B304DF0039CEDC /* libui.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C2782421B304DF0039CEDC /* libui.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66C2782D21B3054C0039CEDC /* SystemLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C2782C21B3054C0039CEDC /* SystemLabel.swift */; };
 		66C2783721B305640039CEDC /* libfa.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C2783521B305640039CEDC /* libfa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66C2783D21B30E4B0039CEDC /* SystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C2783C21B30E4B0039CEDC /* SystemView.swift */; };
+		66C2783F21B30E6A0039CEDC /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C2783E21B30E6A0039CEDC /* SystemViewController.swift */; };
+		66C2784121B30E900039CEDC /* SystemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C2784021B30E900039CEDC /* SystemButton.swift */; };
+		66C2784321B3B0210039CEDC /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C2784221B3B0210039CEDC /* Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		66C2783321B305640039CEDC /* libfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C2783521B305640039CEDC /* libfa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libfa.h; sourceTree = "<group>"; };
 		66C2783621B305640039CEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C2783C21B30E4B0039CEDC /* SystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemView.swift; sourceTree = "<group>"; };
+		66C2783E21B30E6A0039CEDC /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
+		66C2784021B30E900039CEDC /* SystemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemButton.swift; sourceTree = "<group>"; };
+		66C2784221B3B0210039CEDC /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,9 @@
 				66C2782421B304DF0039CEDC /* libui.h */,
 				66C2782521B304DF0039CEDC /* Info.plist */,
 				66C2782C21B3054C0039CEDC /* SystemLabel.swift */,
+				66C2783C21B30E4B0039CEDC /* SystemView.swift */,
+				66C2783E21B30E6A0039CEDC /* SystemViewController.swift */,
+				66C2784021B30E900039CEDC /* SystemButton.swift */,
 			);
 			path = libui;
 			sourceTree = "<group>";
@@ -70,6 +81,7 @@
 		66C2783421B305640039CEDC /* libfa */ = {
 			isa = PBXGroup;
 			children = (
+				66C2784221B3B0210039CEDC /* Enum.swift */,
 				66C2783521B305640039CEDC /* libfa.h */,
 				66C2783621B305640039CEDC /* Info.plist */,
 			);
@@ -158,6 +170,7 @@
 					};
 					66C2783221B305640039CEDC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -201,7 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C2783F21B30E6A0039CEDC /* SystemViewController.swift in Sources */,
 				66C2782D21B3054C0039CEDC /* SystemLabel.swift in Sources */,
+				66C2784121B30E900039CEDC /* SystemButton.swift in Sources */,
+				66C2783D21B30E4B0039CEDC /* SystemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C2784321B3B0210039CEDC /* Enum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -347,7 +364,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = libui/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/libui/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,7 +390,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = libui/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/libui/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,13 +408,14 @@
 		66C2783921B305640039CEDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = libfa/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/libfa/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,6 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.matrixstudios.libfa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -415,13 +434,14 @@
 		66C2783A21B305640039CEDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = libfa/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/libfa/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
